@@ -5,10 +5,13 @@ const Index = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios({
-      method: "GET",
-      url: "https://jsonplaceholder.typicode.com/photos",
-    }).then((Response) => setPosts(Response.data));
+    // axios({
+    //   method: "GET",
+    //   url: "https://jsonplaceholder.typicode.com/photos",
+    // }).then((Response) => setPosts(Response.data));
+    axios
+      .get("https://jsonplaceholder.typicode.com/photos")
+      .then((Response) => setPosts(Response.data));
   });
 
   return (
