@@ -1,10 +1,10 @@
 import "./App.css";
-import Index from "./components";
+import Main from "./components/main";
 
 function App() {
   return (
     <div className="App">
-      <Index />
+      <Main />
     </div>
   );
 }
